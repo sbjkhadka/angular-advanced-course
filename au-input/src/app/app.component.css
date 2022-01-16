@@ -30,3 +30,15 @@ h1 {
   margin-top: 50px;
 }
 
+/* This can be placed here and it works well as the styling is preserved in the nested component */
+/* To effectively isolate styling related to nested component, we use ::ng-deep inside the nested component */
+/* So this way works but not a good way */
+/* See the css of au-fa-input component*/
+/*input {*/
+/*  border: none;*/
+/*  outline: none;*/
+/*  height: 100%;*/
+/*  margin: 1px 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+

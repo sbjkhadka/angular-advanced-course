@@ -1,17 +1,24 @@
 .icon {
   width: 20px;
   text-align: center;
-  background: white;
   padding-left: 5px;
   padding-left: 2px;
+  border: none;
 }
 
 :host {
   border: 1px solid lightgray;
   padding-bottom: 1px;
   padding-top: 1px;
+  display: inline-block;
+  background: white;
+
 }
-input {
+/* Starts implementation from the current component, don't go up in the component tree*/
+:host ::ng-deep input {
   border: none;
   outline: none;
+  height: 100%;
+  margin: 1px 0;
+  box-sizing: border-box;
 }
