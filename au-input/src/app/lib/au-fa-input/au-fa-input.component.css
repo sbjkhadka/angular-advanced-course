@@ -6,6 +6,7 @@
   border: none;
 }
 
+/* style for the host (au-fa-input) selector */
 :host {
   border: 1px solid lightgray;
   padding-bottom: 1px;
@@ -14,7 +15,15 @@
   background: white;
 
 }
-/* Starts implementation from the current component, don't go up in the component tree*/
+:host(.input-focus) {
+  outline: 'none';
+  border: 1px solid #4D90FE;
+  -webkit-box-shadow: 0px 0px 5px #4D90FE;
+  box-shadow: 0px 0px 5px #4D90FE;
+
+}
+/* (:host): Starts implementation from the current component,
+/* don't go up in the component tree, only downwards */
 :host ::ng-deep input {
   border: none;
   outline: none;
