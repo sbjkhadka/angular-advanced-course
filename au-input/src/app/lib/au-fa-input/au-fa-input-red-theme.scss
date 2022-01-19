@@ -1,0 +1,12 @@
+/* Style component depending on css class that is outside of the component */
+/* If there is an wrapping element that contains this(au-fa-input-red-theme) class,
+then this style will be applied but only to the component itself */
+$border-color: red;
+:host-context(.au-fa-input-red-theme) {
+    border-color: $border-color;
+    &.input-focus {
+    -webkit-box-shadow: 0px 0px 5px $border-color;
+    box-shadow: 0px 0px 5px $border-color;
+}
+}
+
